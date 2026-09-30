@@ -1,0 +1,10 @@
+{
+  "id": "acces-rh",
+  "message": "Équipe RH, pouvez-vous ouvrir mon accès au portail des congés pour le mois prochain ? Je n’en ai pas besoin cette semaine.",
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "rh",
+    "type": "acces_outil",
+    "prioritaire": false
+  }
+}

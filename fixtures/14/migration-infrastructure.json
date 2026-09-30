@@ -1,0 +1,18 @@
+{
+  "id": "migration-infrastructure",
+  "titre": "Déployer le nouveau schéma",
+  "description": "Ajouter une colonne et changer la configuration de déploiement.",
+  "fichiers": [
+    "db/migrations/001.sql",
+    "infra/deployment.yml"
+  ],
+  "diff": "+ ALTER TABLE subscriptions ADD COLUMN archived_at timestamp;\n+ replicas: 2",
+  "codeowners": [],
+  "attendu": {
+    "route": "revue_senior",
+    "labels": [
+      "sensible:infra",
+      "sensible:migration"
+    ]
+  }
+}

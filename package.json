@@ -1,0 +1,27 @@
+{
+  "name": "sheesh-jev-examples",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "case:04": "tsx src/cases/04-demandes-internes.ts",
+    "case:14": "tsx src/cases/14-revue-pr.ts",
+    "case:15": "tsx src/cases/15-donnees-personnelles.ts",
+    "run-all": "tsx src/run-all.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^6.4.3",
+    "vitest": "^4.1.11"
+  }
+}

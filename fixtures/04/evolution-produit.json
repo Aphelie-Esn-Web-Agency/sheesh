@@ -1,0 +1,10 @@
+{
+  "id": "evolution-produit",
+  "message": "Pour une prochaine version, pouvez-vous ajouter un filtre par pointure dans le catalogue ? Rien ne presse, nous pouvons travailler.",
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "produit",
+    "type": "evolution",
+    "prioritaire": false
+  }
+}

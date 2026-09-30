@@ -1,0 +1,8 @@
+{
+  "id": "demande-ambigue",
+  "message": "Ça ne passe plus. Vous pouvez faire le nécessaire ?",
+  "attendu": {
+    "route": "revue_humaine",
+    "note": "Équipe, nature et urgence indéterminées."
+  }
+}

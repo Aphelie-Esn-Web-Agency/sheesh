@@ -1,0 +1,8 @@
+{
+  "id": "coordonnees-structurees",
+  "message": "Pour ce test fictif, utilisez contact@example.invalid, le 06 00 00 00 00, l’IBAN de démonstration FR76 0000 0000 0000 0000 0000 000 et la carte de test 4242 4242 4242 4242. Merci de confirmer la collecte.",
+  "attendu": {
+    "route": "anonymisation",
+    "note": "Masquer email, téléphone, IBAN et carte avant Jev."
+  }
+}

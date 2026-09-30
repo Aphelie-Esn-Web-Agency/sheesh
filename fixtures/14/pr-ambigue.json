@@ -1,0 +1,14 @@
+{
+  "id": "pr-ambigue",
+  "titre": "Ajuster le comportement",
+  "description": "Ce changement évite un contrôle gênant. Le contexte métier n’est pas fourni.",
+  "fichiers": [
+    "src/utils/check.ts"
+  ],
+  "diff": "- return check(value)\n+ return true",
+  "codeowners": [],
+  "attendu": {
+    "route": "revue_senior",
+    "note": "Revue prudente car le contrôle supprimé est inconnu."
+  }
+}

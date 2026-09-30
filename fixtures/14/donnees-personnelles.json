@@ -1,0 +1,16 @@
+{
+  "id": "donnees-personnelles",
+  "titre": "Enrichir l’export abonné",
+  "description": "Ajouter la date de naissance à l’export de profils.",
+  "fichiers": [
+    "src/customers/export.ts"
+  ],
+  "diff": "- fields = [\"id\"]\n+ fields = [\"id\", \"birthDate\"]",
+  "codeowners": [],
+  "attendu": {
+    "route": "revue_senior",
+    "labels": [
+      "sensible:donnees"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "finance-adresse",
+  "message": "Je suis en surendettement et ne peux plus payer. Mon domicile est au 12 rue des Nuages, appartement 4, à Ville-Exemple, adresse fictive du test.",
+  "attendu": {
+    "route": "blocage",
+    "motifs": [
+      "situation_financiere_personnelle",
+      "adresse_ou_localisation_precise"
+    ]
+  }
+}

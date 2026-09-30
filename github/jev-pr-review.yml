@@ -1,0 +1,30 @@
+# Exemple manuel sur les fixtures du cas 14, sans modification d'une PR réelle.
+# À copier dans .github/workflows/jev-pr-review.yml pour l'activer.
+name: Démonstration de revue Jev en dry-run
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  demonstration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Évaluer une PR dont les chemins ne révèlent pas le risque
+        run: npm run case:14 -- fixtures/14/paiement-semantique.json
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          JEV_MODEL: jev-1.13
+          DRY_RUN: 'true'
+      - name: Afficher le résultat réel ou l'erreur journalisée
+        if: always()
+        run: |
+          if [ -f results/14/paiement-semantique.json ]; then
+            cat results/14/paiement-semantique.json
+          fi

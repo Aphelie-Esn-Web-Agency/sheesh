@@ -1,0 +1,10 @@
+{
+  "id": "question-ops",
+  "message": "Équipe logistique : quel créneau de collecte est prévu vendredi ? Les tournées actuelles se déroulent normalement.",
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "ops",
+    "type": "question",
+    "prioritaire": false
+  }
+}

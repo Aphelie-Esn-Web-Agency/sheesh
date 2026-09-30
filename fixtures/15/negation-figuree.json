@@ -1,0 +1,7 @@
+{
+  "id": "negation-figuree",
+  "message": "Ces chaussures me donnent des boutons, façon de parler ! Je ne décris aucun problème de santé, je veux simplement connaître les couleurs disponibles.",
+  "attendu": {
+    "route": "envoi_normal"
+  }
+}

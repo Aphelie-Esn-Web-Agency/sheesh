@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100" role="img" aria-labelledby="sheesh-title">
+  <title id="sheesh-title">Sheesh</title>
+  <desc>Mot sheesh en minuscules arrondies, au-dessus d'une semelle corail de profil à crampons rectangulaires.</desc>
+  <g fill="none" stroke="#141414" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M78 31H58C43 31 43 47 58 47H65C80 47 80 63 65 63H45"/>
+    <path d="M99 15V63M99 45C99 26 132 26 132 45V63"/>
+    <path d="M155 47H188V44C188 26 155 26 155 44V50C155 65 174 66 185 60"/>
+    <path d="M211 47H244V44C244 26 211 26 211 44V50C211 65 230 66 241 60"/>
+    <path d="M298 31H278C263 31 263 47 278 47H285C300 47 300 63 285 63H265"/>
+    <path d="M319 15V63M319 45C319 26 352 26 352 45V63"/>
+  </g>
+  <g fill="#FF5A36">
+    <path d="M40 77H334L360 81V88H40Z"/>
+    <path d="M44 88H64V94H44ZM80 88H100V94H80ZM116 88H136V94H116ZM152 88H172V94H152ZM208 88H228V94H208ZM244 88H264V94H244ZM280 88H300V94H280ZM316 88H336V94H316Z"/>
+  </g>
+</svg>

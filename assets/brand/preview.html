@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sheesh : aperçu des logos</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 24px;
+        background: #e7e7e2;
+        color: #141414;
+        font-family: system-ui, sans-serif;
+      }
+      h1 { margin: 0 0 12px; font-size: 24px; }
+      p { margin: 0 0 24px; line-height: 1.5; }
+      .comparison { overflow-x: auto; }
+      .logos {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(848px, 1fr));
+        gap: 16px;
+      }
+      section { padding: 24px; }
+      .light { background: #f5f5f0; color: #141414; }
+      .dark { background: #141414; color: #f5f5f0; }
+      h2 { margin: 0 0 32px; font-size: 20px; }
+      figure { margin: 0 0 32px; }
+      figure:last-child { margin-bottom: 0; }
+      figcaption { margin-bottom: 16px; font-size: 14px; }
+      img { display: block; max-width: none; }
+    </style>
+  </head>
+  <body>
+    <h1>Sheesh : aperçu des logos</h1>
+    <p>Tailles fixes de 32 et 200 px de hauteur. Faites défiler horizontalement si nécessaire pour comparer les deux fonds sans réduire les logos.</p>
+    <div class="comparison" role="region" aria-label="Comparaison des logos sur fond clair et sombre" tabindex="0">
+      <div class="logos">
+        <section class="light" aria-labelledby="light-heading">
+          <h2 id="light-heading">Fond clair</h2>
+          <figure>
+            <figcaption>Hauteur : 32 px · Largeur : 128 px</figcaption>
+            <img src="sheesh-logo-light.svg" width="128" height="32" alt="Sheesh, lettres sombres arrondies et semelle corail à crampons">
+          </figure>
+          <figure>
+            <figcaption>Hauteur : 200 px · Largeur : 800 px</figcaption>
+            <img src="sheesh-logo-light.svg" width="800" height="200" alt="Sheesh, lettres sombres arrondies et semelle corail à crampons">
+          </figure>
+        </section>
+        <section class="dark" aria-labelledby="dark-heading">
+          <h2 id="dark-heading">Fond sombre</h2>
+          <figure>
+            <figcaption>Hauteur : 32 px · Largeur : 128 px</figcaption>
+            <img src="sheesh-logo-dark.svg" width="128" height="32" alt="Sheesh, lettres claires arrondies et semelle corail à crampons">
+          </figure>
+          <figure>
+            <figcaption>Hauteur : 200 px · Largeur : 800 px</figcaption>
+            <img src="sheesh-logo-dark.svg" width="800" height="200" alt="Sheesh, lettres claires arrondies et semelle corail à crampons">
+          </figure>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

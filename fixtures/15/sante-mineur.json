@@ -1,0 +1,11 @@
+{
+  "id": "sante-mineur",
+  "message": "Mon enfant de huit ans suit une chimiothérapie. Merci d’adapter la collecte à son séjour hospitalier.",
+  "attendu": {
+    "route": "blocage",
+    "motifs": [
+      "mention_sante",
+      "mention_mineur"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "situation-ambigue",
+  "message": "C’est compliqué en ce moment, pouvez-vous décaler ce qui est prévu ? Je préfère ne pas expliquer pourquoi.",
+  "attendu": {
+    "route": "revue_humaine",
+    "note": "Attente prudente à confronter au résultat réel : le motif reste implicite."
+  }
+}

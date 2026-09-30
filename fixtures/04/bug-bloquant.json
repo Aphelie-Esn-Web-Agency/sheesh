@@ -1,0 +1,10 @@
+{
+  "id": "bug-bloquant",
+  "message": "Le portail interne renvoie une erreur à chaque validation. Toute l’équipe est bloquée, impossible de préparer les collectes.",
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "tech",
+    "type": "bug",
+    "prioritaire": true
+  }
+}

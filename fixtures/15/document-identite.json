@@ -1,0 +1,10 @@
+{
+  "id": "document-identite",
+  "message": "Je joins une copie recto verso de ma carte d’identité : on y voit mon portrait, ma date de naissance et ma signature.",
+  "attendu": {
+    "route": "blocage",
+    "motifs": [
+      "document_identite_decrit"
+    ]
+  }
+}

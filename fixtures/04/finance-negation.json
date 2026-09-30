@@ -1,0 +1,10 @@
+{
+  "id": "finance-negation",
+  "message": "Je ne suis pas bloqué et je ne signale pas de bug. À la comptabilité : dans quelle rubrique déclarer une note de frais de déplacement ?",
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "finance",
+    "type": "question",
+    "prioritaire": false
+  }
+}

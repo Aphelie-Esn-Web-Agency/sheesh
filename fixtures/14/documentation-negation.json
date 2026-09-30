@@ -1,0 +1,14 @@
+{
+  "id": "documentation-negation",
+  "titre": "Corriger une coquille",
+  "description": "Ne change ni la connexion, ni le paiement, ni aucune donnée. Modification purement orthographique.",
+  "fichiers": [
+    "docs/guide.md"
+  ],
+  "diff": "- Bienvenu\n+ Bienvenue",
+  "codeowners": [],
+  "attendu": {
+    "route": "revue_standard",
+    "labels": []
+  }
+}

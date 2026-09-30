@@ -1,0 +1,19 @@
+{
+  "id": "auth-chemin",
+  "titre": "Raccourcir la durée de session",
+  "description": "La session expire désormais plus rapidement.",
+  "fichiers": [
+    "src/auth/session.ts"
+  ],
+  "diff": "- expiresIn = 86400\n+ expiresIn = 3600",
+  "codeowners": [
+    "@equipe-securite"
+  ],
+  "attendu": {
+    "route": "revue_senior",
+    "labels": [
+      "revue:codeowners",
+      "sensible:auth"
+    ]
+  }
+}
