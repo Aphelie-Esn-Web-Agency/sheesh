@@ -47,6 +47,16 @@ Les résultats sont écrits dans `results/<cas>/<id-fixture>.json`. Les identifi
 
 Aucune réponse Jev n'est déduite du champ `attendu`. Les cas capturent les erreurs pour demander une revue humaine. Un échec d'exécution donne un code de sortie non nul ; `run-all` poursuit les fixtures suivantes. Une revue humaine motivée par l'incertitude est une décision métier normale. Une erreur de lecture ou d'écriture locale est signalée en console.
 
+## Rapport local
+
+```sh
+npm run report
+```
+
+Cette commande lit les journaux `results/<cas>/*.json` et crée ou remplace `results/rapport.md`, sans clé ni appel réseau. Elle ne modifie pas les journaux et ne relance aucun cas. Le rapport contient un tableau par cas : fixture, décision attendue, décision obtenue, valeurs Jev, coût `usage.cost` en USD, latence en millisecondes et conformité. Il se termine par le coût total et les taux de conformité par cas.
+
+La comparaison vérifie les champs présents dans `attendu`, en ignorant `note`. Les listes, notamment `labels` et `motifs`, doivent contenir exactement les mêmes éléments, sans tenir compte de leur ordre. Les champs supplémentaires de la décision ne pénalisent pas la comparaison. Une erreur d'exécution, une réponse absente, une troncature ou un journal invalide compte comme non conforme. Le dénominateur comprend tous les fichiers JSON présents pour le cas ; une fixture sans journal n'est pas évaluée. Un coût absent est signalé comme inconnu et le total est alors explicitement partiel. Avant toute exécution, la commande produit un rapport vide. Le rapport reste local et ignoré par Git comme le reste de `results/`.
+
 ## Les trois cas
 
 | Cas | Questions | Règles et actions proposées |

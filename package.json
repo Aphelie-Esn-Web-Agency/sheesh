@@ -11,6 +11,7 @@
     "case:14": "tsx src/cases/14-revue-pr.ts",
     "case:15": "tsx src/cases/15-donnees-personnelles.ts",
     "run-all": "tsx src/run-all.ts",
+    "report": "tsx src/report.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
