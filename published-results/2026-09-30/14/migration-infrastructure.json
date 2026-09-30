@@ -1,0 +1,87 @@
+{
+  "caseId": "14",
+  "fixture": "migration-infrastructure",
+  "date": "2026-09-30T07:22:16.456Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "revue_senior",
+    "labels": [
+      "sensible:infra",
+      "sensible:migration"
+    ]
+  },
+  "decision": {
+    "route": "revue_senior",
+    "labels": [
+      "sensible:infra",
+      "sensible:migration"
+    ],
+    "incertain": true,
+    "approuvee": false
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "touche_authentification": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "touche_paiement": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "touche_donnees_personnelles": {
+        "type": "noul",
+        "noul": 0.48
+      },
+      "migration_base_de_donnees": {
+        "type": "noul",
+        "noul": 0.96
+      },
+      "touche_infrastructure": {
+        "type": "noul",
+        "noul": 0.95
+      }
+    },
+    "usage": {
+      "input_tokens": 477,
+      "output_tokens": 112,
+      "cost": 0.000020034
+    },
+    "latencyMs": 543.8864590000003,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "github",
+      "operation": "ajouter_labels",
+      "payload": {
+        "labels": [
+          "sensible:infra",
+          "sensible:migration"
+        ]
+      },
+      "simulated": true
+    },
+    {
+      "tool": "github",
+      "operation": "demander_revue",
+      "payload": {
+        "niveau": "senior",
+        "codeowners": [],
+        "approbation": false
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {
+    "labelsDeterministes": [
+      "sensible:infra",
+      "sensible:migration"
+    ],
+    "codeowners": []
+  },
+  "error": null
+}

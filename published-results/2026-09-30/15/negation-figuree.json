@@ -1,0 +1,66 @@
+{
+  "caseId": "15",
+  "fixture": "negation-figuree",
+  "date": "2026-09-30T07:22:25.471Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "envoi_normal"
+  },
+  "decision": {
+    "route": "envoi_normal"
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "adresse_ou_localisation_precise": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "mention_sante": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "mention_mineur": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "document_identite_decrit": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "situation_financiere_personnelle": {
+        "type": "noul",
+        "noul": 0.03
+      }
+    },
+    "usage": {
+      "input_tokens": 416,
+      "output_tokens": 111,
+      "cost": 0.000017472
+    },
+    "latencyMs": 450.247374999999,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "outbound",
+      "operation": "envoi_simule",
+      "payload": {
+        "mode": "envoi_normal",
+        "contenuJournalise": false
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {
+    "donneesMasquees": {
+      "email": 0,
+      "iban": 0,
+      "carte": 0,
+      "telephone": 0
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,83 @@
+{
+  "caseId": "14",
+  "fixture": "donnees-personnelles",
+  "date": "2026-09-30T07:22:15.911Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "revue_senior",
+    "labels": [
+      "sensible:donnees"
+    ]
+  },
+  "decision": {
+    "route": "revue_senior",
+    "labels": [
+      "sensible:donnees"
+    ],
+    "incertain": false,
+    "approuvee": false
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "touche_authentification": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "touche_paiement": {
+        "type": "noul",
+        "noul": 0.03
+      },
+      "touche_donnees_personnelles": {
+        "type": "noul",
+        "noul": 0.94
+      },
+      "migration_base_de_donnees": {
+        "type": "noul",
+        "noul": 0.05
+      },
+      "touche_infrastructure": {
+        "type": "noul",
+        "noul": 0.03
+      }
+    },
+    "usage": {
+      "input_tokens": 476,
+      "output_tokens": 112,
+      "cost": 0.000019992
+    },
+    "latencyMs": 361.71658400000024,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "github",
+      "operation": "ajouter_labels",
+      "payload": {
+        "labels": [
+          "sensible:donnees"
+        ]
+      },
+      "simulated": true
+    },
+    {
+      "tool": "github",
+      "operation": "demander_revue",
+      "payload": {
+        "niveau": "senior",
+        "codeowners": [],
+        "approbation": false
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {
+    "labelsDeterministes": [
+      "sensible:donnees"
+    ],
+    "codeowners": []
+  },
+  "error": null
+}

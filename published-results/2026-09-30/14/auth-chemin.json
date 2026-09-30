@@ -1,0 +1,91 @@
+{
+  "caseId": "14",
+  "fixture": "auth-chemin",
+  "date": "2026-09-30T07:22:15.084Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "revue_senior",
+    "labels": [
+      "revue:codeowners",
+      "sensible:auth"
+    ]
+  },
+  "decision": {
+    "route": "revue_senior",
+    "labels": [
+      "revue:codeowners",
+      "sensible:auth"
+    ],
+    "incertain": true,
+    "approuvee": false
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "touche_authentification": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "touche_paiement": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "touche_donnees_personnelles": {
+        "type": "noul",
+        "noul": 0.59
+      },
+      "migration_base_de_donnees": {
+        "type": "noul",
+        "noul": 0.04
+      },
+      "touche_infrastructure": {
+        "type": "noul",
+        "noul": 0.16
+      }
+    },
+    "usage": {
+      "input_tokens": 465,
+      "output_tokens": 112,
+      "cost": 0.00001953
+    },
+    "latencyMs": 698.3448330000001,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "github",
+      "operation": "ajouter_labels",
+      "payload": {
+        "labels": [
+          "revue:codeowners",
+          "sensible:auth"
+        ]
+      },
+      "simulated": true
+    },
+    {
+      "tool": "github",
+      "operation": "demander_revue",
+      "payload": {
+        "niveau": "senior",
+        "codeowners": [
+          "@equipe-securite"
+        ],
+        "approbation": false
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {
+    "labelsDeterministes": [
+      "revue:codeowners",
+      "sensible:auth"
+    ],
+    "codeowners": [
+      "@equipe-securite"
+    ]
+  },
+  "error": null
+}

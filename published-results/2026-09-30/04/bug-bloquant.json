@@ -1,0 +1,87 @@
+{
+  "caseId": "04",
+  "fixture": "bug-bloquant",
+  "date": "2026-09-30T07:22:12.567Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "tech",
+    "type": "bug",
+    "prioritaire": true
+  },
+  "decision": {
+    "route": "affectation_proposee",
+    "equipe": "tech",
+    "type": "bug",
+    "prioritaire": true,
+    "corrigeable": true
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "equipe": {
+        "type": "choice",
+        "choice": "tech",
+        "probabilities": {
+          "rh": 0,
+          "produit": 0,
+          "tech": 1,
+          "finance": 0,
+          "ops": 0
+        },
+        "confidence": 1
+      },
+      "type_demande": {
+        "type": "choice",
+        "choice": "bug",
+        "probabilities": {
+          "question": 0,
+          "evolution": 0,
+          "acces_outil": 0,
+          "bug": 1
+        },
+        "confidence": 1
+      },
+      "bloquant": {
+        "type": "noul",
+        "noul": 0.93
+      }
+    },
+    "usage": {
+      "input_tokens": 580,
+      "output_tokens": 122,
+      "cost": 0.00002436
+    },
+    "latencyMs": 377.00204199999996,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "asana",
+      "operation": "creer_tache",
+      "payload": {
+        "projet": "tech",
+        "type": "bug",
+        "fixture": "bug-bloquant",
+        "corrigeable": true,
+        "equipe_initiale": "tech",
+        "equipe_finale": null,
+        "reaffectee": null
+      },
+      "simulated": true
+    },
+    {
+      "tool": "slack",
+      "operation": "notifier_blocage",
+      "payload": {
+        "equipe": "tech",
+        "fixture": "bug-bloquant"
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {},
+  "error": null
+}

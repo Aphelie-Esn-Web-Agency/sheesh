@@ -1,0 +1,78 @@
+{
+  "caseId": "04",
+  "fixture": "acces-rh",
+  "date": "2026-09-30T07:22:12.188Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "rh",
+    "type": "acces_outil",
+    "prioritaire": false
+  },
+  "decision": {
+    "route": "affectation_proposee",
+    "equipe": "rh",
+    "type": "acces_outil",
+    "prioritaire": false,
+    "corrigeable": true
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "equipe": {
+        "type": "choice",
+        "choice": "rh",
+        "probabilities": {
+          "finance": 0,
+          "tech": 0.01,
+          "rh": 0.99,
+          "ops": 0,
+          "produit": 0
+        },
+        "confidence": 0.98
+      },
+      "type_demande": {
+        "type": "choice",
+        "choice": "acces_outil",
+        "probabilities": {
+          "question": 0,
+          "bug": 0,
+          "acces_outil": 1,
+          "evolution": 0
+        },
+        "confidence": 1
+      },
+      "bloquant": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "usage": {
+      "input_tokens": 579,
+      "output_tokens": 126,
+      "cost": 0.000024318
+    },
+    "latencyMs": 534.5135,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "asana",
+      "operation": "creer_tache",
+      "payload": {
+        "projet": "rh",
+        "type": "acces_outil",
+        "fixture": "acces-rh",
+        "corrigeable": true,
+        "equipe_initiale": "rh",
+        "equipe_finale": null,
+        "reaffectee": null
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {},
+  "error": null
+}

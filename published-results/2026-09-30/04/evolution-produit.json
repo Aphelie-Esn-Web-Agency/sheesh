@@ -1,0 +1,78 @@
+{
+  "caseId": "04",
+  "fixture": "evolution-produit",
+  "date": "2026-09-30T07:22:13.452Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "produit",
+    "type": "evolution",
+    "prioritaire": false
+  },
+  "decision": {
+    "route": "affectation_proposee",
+    "equipe": "produit",
+    "type": "evolution",
+    "prioritaire": false,
+    "corrigeable": true
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "equipe": {
+        "type": "choice",
+        "choice": "produit",
+        "probabilities": {
+          "tech": 0,
+          "ops": 0,
+          "produit": 1,
+          "rh": 0,
+          "finance": 0
+        },
+        "confidence": 1
+      },
+      "type_demande": {
+        "type": "choice",
+        "choice": "evolution",
+        "probabilities": {
+          "evolution": 1,
+          "question": 0,
+          "bug": 0,
+          "acces_outil": 0
+        },
+        "confidence": 1
+      },
+      "bloquant": {
+        "type": "noul",
+        "noul": 0.05
+      }
+    },
+    "usage": {
+      "input_tokens": 576,
+      "output_tokens": 125,
+      "cost": 0.000024192
+    },
+    "latencyMs": 475.398416,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "asana",
+      "operation": "creer_tache",
+      "payload": {
+        "projet": "produit",
+        "type": "evolution",
+        "fixture": "evolution-produit",
+        "corrigeable": true,
+        "equipe_initiale": "produit",
+        "equipe_finale": null,
+        "reaffectee": null
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {},
+  "error": null
+}

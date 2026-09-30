@@ -1,0 +1,67 @@
+{
+  "caseId": "04",
+  "fixture": "demande-ambigue",
+  "date": "2026-09-30T07:22:12.976Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "revue_humaine",
+    "note": "Équipe, nature et urgence indéterminées."
+  },
+  "decision": {
+    "route": "revue_humaine",
+    "raison": "incertitude"
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "equipe": {
+        "type": "choice",
+        "choice": "tech",
+        "probabilities": {
+          "ops": 0,
+          "produit": 0,
+          "finance": 0,
+          "tech": 1,
+          "rh": 0
+        },
+        "confidence": 0.99
+      },
+      "type_demande": {
+        "type": "choice",
+        "choice": "bug",
+        "probabilities": {
+          "evolution": 0,
+          "question": 0,
+          "acces_outil": 0,
+          "bug": 1
+        },
+        "confidence": 1
+      },
+      "bloquant": {
+        "type": "noul",
+        "noul": 0.77
+      }
+    },
+    "usage": {
+      "input_tokens": 561,
+      "output_tokens": 122,
+      "cost": 0.000023562
+    },
+    "latencyMs": 406.97916699999996,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "human",
+      "operation": "revue",
+      "payload": {
+        "raison": "incertitude"
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {},
+  "error": null
+}

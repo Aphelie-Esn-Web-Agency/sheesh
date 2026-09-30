@@ -1,0 +1,78 @@
+{
+  "caseId": "04",
+  "fixture": "finance-negation",
+  "date": "2026-09-30T07:22:13.904Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "finance",
+    "type": "question",
+    "prioritaire": false
+  },
+  "decision": {
+    "route": "affectation_proposee",
+    "equipe": "finance",
+    "type": "question",
+    "prioritaire": false,
+    "corrigeable": true
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "equipe": {
+        "type": "choice",
+        "choice": "finance",
+        "probabilities": {
+          "produit": 0,
+          "ops": 0,
+          "rh": 0,
+          "finance": 1,
+          "tech": 0
+        },
+        "confidence": 1
+      },
+      "type_demande": {
+        "type": "choice",
+        "choice": "question",
+        "probabilities": {
+          "evolution": 0,
+          "acces_outil": 0,
+          "question": 1,
+          "bug": 0
+        },
+        "confidence": 1
+      },
+      "bloquant": {
+        "type": "noul",
+        "noul": 0.04
+      }
+    },
+    "usage": {
+      "input_tokens": 587,
+      "output_tokens": 122,
+      "cost": 0.000024654
+    },
+    "latencyMs": 450.5688339999999,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "asana",
+      "operation": "creer_tache",
+      "payload": {
+        "projet": "finance",
+        "type": "question",
+        "fixture": "finance-negation",
+        "corrigeable": true,
+        "equipe_initiale": "finance",
+        "equipe_finale": null,
+        "reaffectee": null
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {},
+  "error": null
+}

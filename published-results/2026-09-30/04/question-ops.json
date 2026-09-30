@@ -1,0 +1,78 @@
+{
+  "caseId": "04",
+  "fixture": "question-ops",
+  "date": "2026-09-30T07:22:14.383Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "affectation_proposee",
+    "equipe": "ops",
+    "type": "question",
+    "prioritaire": false
+  },
+  "decision": {
+    "route": "affectation_proposee",
+    "equipe": "ops",
+    "type": "question",
+    "prioritaire": false,
+    "corrigeable": true
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "equipe": {
+        "type": "choice",
+        "choice": "ops",
+        "probabilities": {
+          "ops": 1,
+          "tech": 0,
+          "produit": 0,
+          "rh": 0,
+          "finance": 0
+        },
+        "confidence": 1
+      },
+      "type_demande": {
+        "type": "choice",
+        "choice": "question",
+        "probabilities": {
+          "bug": 0,
+          "acces_outil": 0,
+          "evolution": 0,
+          "question": 1
+        },
+        "confidence": 1
+      },
+      "bloquant": {
+        "type": "noul",
+        "noul": 0.06
+      }
+    },
+    "usage": {
+      "input_tokens": 582,
+      "output_tokens": 122,
+      "cost": 0.000024444
+    },
+    "latencyMs": 477.7493749999999,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "asana",
+      "operation": "creer_tache",
+      "payload": {
+        "projet": "ops",
+        "type": "question",
+        "fixture": "question-ops",
+        "corrigeable": true,
+        "equipe_initiale": "ops",
+        "equipe_finale": null,
+        "reaffectee": null
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {},
+  "error": null
+}

@@ -1,0 +1,67 @@
+{
+  "caseId": "15",
+  "fixture": "situation-ambigue",
+  "date": "2026-09-30T07:22:26.603Z",
+  "statut": "termine",
+  "dryRun": true,
+  "attendu": {
+    "route": "revue_humaine",
+    "note": "Attente prudente à confronter au résultat réel : le motif reste implicite."
+  },
+  "decision": {
+    "route": "envoi_normal"
+  },
+  "response": {
+    "model": "typesafe/jev-1.13-20260917",
+    "answers": {
+      "adresse_ou_localisation_precise": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "mention_sante": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "mention_mineur": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "document_identite_decrit": {
+        "type": "noul",
+        "noul": 0.02
+      },
+      "situation_financiere_personnelle": {
+        "type": "noul",
+        "noul": 0.09
+      }
+    },
+    "usage": {
+      "input_tokens": 417,
+      "output_tokens": 111,
+      "cost": 0.000017514
+    },
+    "latencyMs": 649.1110420000005,
+    "truncated": false,
+    "provider": "TypeSafe"
+  },
+  "actions": [
+    {
+      "tool": "outbound",
+      "operation": "envoi_simule",
+      "payload": {
+        "mode": "envoi_normal",
+        "contenuJournalise": false
+      },
+      "simulated": true
+    }
+  ],
+  "metadata": {
+    "donneesMasquees": {
+      "email": 0,
+      "iban": 0,
+      "carte": 0,
+      "telephone": 0
+    }
+  },
+  "error": null
+}
